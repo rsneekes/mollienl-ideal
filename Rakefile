@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "mollie-ideal"
   gem.homepage = "http://github.com/rsneekes/mollie-ideal"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = "mollie.nl iDEAL payment processor integration Gem"
+  gem.description = "mollie.nl iDEAL payment processor integration Gem"
   gem.email = "raymond@sneek.es"
   gem.authors = ["Raymond Sneekes"]
   # dependencies defined in Gemfile
