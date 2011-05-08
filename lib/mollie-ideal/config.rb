@@ -16,6 +16,12 @@ module MollieIDeal
       def reset!
         @defaults.each { |k, v| instance_variable_set(k, v) }
       end
+
+      def update!
+        @defaults.each do |k, v| 
+          instance_variable_set(k, v) unless instance_variable_defined(k)
+        end
+      end
     end
     init!
     reset!
