@@ -14,7 +14,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
-  gem.name = "mollie-ideal"
+  gem.name = "mollienl-ideal"
   gem.homepage = "http://github.com/rsneekes/mollie-ideal"
   gem.license = "MIT"
   gem.summary = "mollie.nl iDEAL payment processor integration Gem"
