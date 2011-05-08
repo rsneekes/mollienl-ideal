@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
     "lib/mollie-ideal/engine.rb",
     "lib/mollie-ideal/payment_request.rb",
     "lib/mollie-ideal/payment_result.rb",
+    "mollie-ideal.gemspec",
     "test/helper.rb",
     "test/test_mollie-ideal.rb"
   ]
