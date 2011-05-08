@@ -43,7 +43,7 @@ module MollieIDeal
   end
 
   def self.get_data(params)
-    params["testmode"] = "true"
+    params["testmode"] = Config.test_mode
 
     uri = URI.parse(MOLLIE_URL + URI.encode_www_form(params))
     http = Net::HTTP.new(uri.host, uri.port)
