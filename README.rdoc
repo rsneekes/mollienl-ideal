@@ -1,6 +1,35 @@
 = mollie-ideal
 
-Description goes here.
+Simple gem for processing mollie.nl iDeal payments. 
+
+configuration parameters
+  config.mollie_ideal.partner_id = numeric mollie partner id
+  config.mollie_ideal.report_url = url mollie calls to report transaction status
+  config.mollie_ideal.return_url = url Mollie redirects to after the transaction
+  config.mollie_ideal.test_mode = true/false Test mode parameter for Mollie.nl
+
+methods
+  get_banks
+    Returns a list of banks of which one must be selected to process the 
+    transaction.
+
+  do_request_payment(amount, description, bank_id)
+    Requests a payment for the specified amount (in cents) with description for
+    the bank selected from the get_banks method. 
+    
+    The response holds a transaction_id which is the reference to this
+    transaction, and a url to which must be redirected to in order to make the
+    payment on the website of the selected bank
+
+  check_status(transaction_id)
+    Can be used for the report_url or standalone to check the status of the 
+    transaction. The mollie documentation specifies that this method can be 
+    called only once for a transaction.
+
+TODO:
+  Generators for model/controller
+  Tests
+  Better error handling
 
 == Contributing to mollie-ideal
  

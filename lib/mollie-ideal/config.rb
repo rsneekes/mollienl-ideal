@@ -1,6 +1,10 @@
 module MollieIDeal
   module Config
     class << self
+      # partner_id = numeric mollie partner id
+      # report_url = url mollie calls to report transaction status
+      # return_url = url Mollie redirects to after the transaction
+      # test_mode = true/false Test mode parameter for Mollie.nl
       attr_accessor :partner_id, :report_url, :return_url, :test_mode
 
       def init!

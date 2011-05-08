@@ -1,6 +1,8 @@
 module MollieIDeal
   MOLLIE_URL = "https://secure.mollie.nl/xml/ideal?"
 
+  #  Returns a list of banks of which one must be selected to process the 
+  #  transaction
   def self.get_banks
     banks = []
 
@@ -12,6 +14,12 @@ module MollieIDeal
     banks
   end
 
+  # Requests a payment for the specified amount (in cents) with description for
+  # the bank selected from the get_banks method. 
+  # 
+  # the response holds a transaction_id which is the reference to this
+  # transaction, and a url to which must be redirected to in order to make the
+  # payment on the website of the selected bank
   def self.do_request_payment(amount, description, bank_id)
     p = { 
       :a => "fetch", 
@@ -29,6 +37,9 @@ module MollieIDeal
     end
   end
 
+  # can be used for the report_url or standalone to check the status of the 
+  # transaction. The mollie documentation specifies that this method can be 
+  # called only once for a transaction.
   def self.check_status(transaction_id)
     p = { 
       :a => "check", 
