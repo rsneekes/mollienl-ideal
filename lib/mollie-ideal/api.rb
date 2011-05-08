@@ -15,10 +15,10 @@ module MollieIDeal
   def self.do_request_payment(amount, description, bank_id)
     p = { 
       :a => "fetch", 
-      :partnerid => PARTNER_ID,
+      :partnerid => Config.partner_id,
       :description => description,
-      :reporturl => REPORT_URL,
-      :returnurl => RETURN_URL,
+      :reporturl => Config.report_url,
+      :returnurl => Config.return_url,
       :amount => amount,
       :bank_id => bank_id
     }
@@ -32,7 +32,7 @@ module MollieIDeal
   def self.check_status(transaction_id)
     p = { 
       :a => "check", 
-      :partnerid => PARTNER_ID,
+      :partnerid => Config.partner_id,
       :transaction_id => transaction_id
     }
 
