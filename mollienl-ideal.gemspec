@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{mollienl-ideal}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Raymond Sneekes"]
@@ -24,14 +24,14 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/mollie-ideal.rb",
-    "lib/mollie-ideal/api.rb",
-    "lib/mollie-ideal/bank.rb",
-    "lib/mollie-ideal/config.rb",
-    "lib/mollie-ideal/engine.rb",
-    "lib/mollie-ideal/payment_request.rb",
-    "lib/mollie-ideal/payment_result.rb",
-    "mollie-ideal.gemspec",
+    "lib/mollienl-ideal.rb",
+    "lib/mollienl-ideal/api.rb",
+    "lib/mollienl-ideal/bank.rb",
+    "lib/mollienl-ideal/config.rb",
+    "lib/mollienl-ideal/engine.rb",
+    "lib/mollienl-ideal/payment_request.rb",
+    "lib/mollienl-ideal/payment_result.rb",
+    "mollienl-ideal.gemspec",
     "test/helper.rb",
     "test/test_mollie-ideal.rb"
   ]
