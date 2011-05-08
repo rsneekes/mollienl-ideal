@@ -1,4 +1,4 @@
-module MollieIDeal
+module MollieNLIDeal
   MOLLIE_URL = "https://secure.mollie.nl/xml/ideal?"
 
   #  Returns a list of banks of which one must be selected to process the 
@@ -61,7 +61,6 @@ module MollieIDeal
     http.use_ssl = true
 
     response = http.request(Net::HTTP::Get.new(uri.request_uri))
-    puts response.body
 
     doc = REXML::Document.new response.body
     doc.elements.each("response/item[@type='error']/message") do |elem|

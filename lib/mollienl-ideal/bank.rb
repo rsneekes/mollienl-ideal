@@ -1,4 +1,4 @@
-module MollieIDeal
+module MollieNLIDeal
   class Bank
     attr_accessor :id, :name
 

@@ -1,4 +1,4 @@
-module MollieIDeal
+module MollieNLIDeal
   class PaymentResult < PaymentRequest
     attr_accessor :payed, :consumer_name, :consumer_account, :consumer_city
 

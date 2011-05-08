@@ -1,4 +1,4 @@
-module MollieIDeal
+module MollieNLIDeal
   module Config
     class << self
       # partner_id = numeric mollie partner id
@@ -8,7 +8,6 @@ module MollieIDeal
       attr_accessor :partner_id, :report_url, :return_url, :test_mode
 
       def init!
-        puts "Init config"
         @defaults = {
           :@partner_id => nil,
           :@report_url => nil,
