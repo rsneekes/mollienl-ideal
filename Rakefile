@@ -15,10 +15,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "mollienl-ideal"
-  gem.homepage = "http://github.com/rsneekes/mollie-ideal"
+  gem.homepage = "http://github.com/rsneekes/mollienl-ideal"
   gem.license = "MIT"
   gem.summary = "mollie.nl iDEAL payment processor integration Gem"
-  gem.description = "mollie.nl iDEAL payment processor integration Gem"
+  gem.description = "Simple mollie.nl iDEAL payment processor integration Gem"
   gem.email = "raymond@sneek.es"
   gem.authors = ["Raymond Sneekes"]
   # dependencies defined in Gemfile
@@ -47,7 +47,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "mollie-ideal #{version}"
+  rdoc.title = "mollienl-ideal #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
