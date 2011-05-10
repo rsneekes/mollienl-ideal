@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{mollienl-ideal}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Raymond Sneekes"]
-  s.date = %q{2011-05-08}
+  s.date = %q{2011-05-10}
   s.description = %q{Simple mollie.nl iDEAL payment processor integration Gem}
   s.email = %q{raymond@sneek.es}
   s.extra_rdoc_files = [
